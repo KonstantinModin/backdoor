@@ -38,9 +38,10 @@ def download_file(file_name):
     target.settimeout(None)
     f.close()
 
+
 def upload_file(file_name):
     f = open(file_name, READ_BYTES)
-    sock.send(f.read())
+    target.send(f.read())
 
 
 def target_communication():
